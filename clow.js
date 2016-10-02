@@ -21,7 +21,7 @@ module.exports = [
     devDependencies: [
       "babel-cli",
       "babel-eslint",
-      "babel-plugin-transform-runtime"
+      "babel-plugin-transform-runtime",
       "babel-preset-es2015",
       "babel-preset-es2016",
       "babel-preset-es2017",
@@ -30,12 +30,13 @@ module.exports = [
       "babel-preset-react",
       "babel-register",
       "eslint",
-      "eslint-config-airbnb",
-      "eslint-plugin-async-await",
-      "eslint-plugin-babel",
-      "eslint-plugin-import",
-      "eslint-plugin-jsx-a11y",
-      "eslint-plugin-react",
+      // eslint-config-airbnb was installed via shell commands
+      // "eslint-config-airbnb",
+      // "eslint-plugin-async-await",
+      // "eslint-plugin-babel",
+      // "eslint-plugin-import",
+      // "eslint-plugin-jsx-a11y",
+      // "eslint-plugin-react",
       "mocha",
       "recursive-readdir",
       "enzyme",
@@ -50,6 +51,12 @@ module.exports = [
       "copy-webpack-plugin",
       "babel-loader",
       "style-loader",
+    ]
+  },
+  {
+    type: "shell",
+    commands: [
+      "npm info eslint-config-airbnb peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --DE eslint-config-airbnb"
     ]
   },
   {
