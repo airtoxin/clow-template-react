@@ -30,10 +30,10 @@ module.exports = [
       "babel-preset-react",
       "babel-register",
       "eslint",
+      "eslint-plugin-babel",
+      "eslint-plugin-async-await",
       // eslint-config-airbnb was installed via shell commands
       // "eslint-config-airbnb",
-      // "eslint-plugin-async-await",
-      // "eslint-plugin-babel",
       // "eslint-plugin-import",
       // "eslint-plugin-jsx-a11y",
       // "eslint-plugin-react",
