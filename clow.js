@@ -26,7 +26,6 @@ module.exports = [
       "babel-preset-es2016",
       "babel-preset-es2017",
       "babel-preset-stage-2",
-      "babel-preset-stage-3",
       "babel-preset-react",
       "babel-register",
       "eslint",
