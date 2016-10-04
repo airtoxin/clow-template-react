@@ -1,19 +1,19 @@
-import nightmare from "nightmare";
-import assert from "assert";
+import nightmare from 'nightmare';
+import assert from 'assert';
 
-const URL = "http://localhost:9999";
+const URL = 'http://localhost:9999';
 
-describe("{{name}}", () => {
+describe('{{name}}', () => {
   let page;
   beforeEach(() => {
     page = nightmare({ show: true });
   });
 
-  it("should show page", () => {
+  it('should show page', () => {
     return page
       .goto(URL)
       .title()
       .end()
-      .then(title => assert.strictEqual(title, "{{name}}"));
+      .then(title => assert.strictEqual(title, '{{name}}'));
   });
 });
