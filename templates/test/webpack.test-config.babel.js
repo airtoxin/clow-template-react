@@ -1,5 +1,5 @@
-import base from '../webpack.config.babel.js';
 import Copy from 'copy-webpack-plugin';
+import base from '../webpack.config.babel';
 
 export default {
   ...base,

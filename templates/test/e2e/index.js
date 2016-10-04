@@ -10,10 +10,11 @@ describe('{{name}}', () => {
   });
 
   it('should show page', () => {
-    return page
+    const result = page
       .goto(URL)
       .title()
       .end()
       .then(title => assert.strictEqual(title, '{{name}}'));
+    return result;
   });
 });
